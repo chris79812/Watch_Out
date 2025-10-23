@@ -47,3 +47,6 @@ public class PlayerMovement : MonoBehaviour
         controller.Move(velocity * Time.deltaTime);
     }
 }
+
+
+//video is on 15:20 explaining how it works
