@@ -28,12 +28,43 @@ public class TimeManager : MonoBehaviour
 
     private void OnMinutesChange(int value)
     {
-        throw new NotImplementedException();
+        if (value >= 60)
+        {
+            Hours++;
+            minutes = 0;
+        }
+        if (Hours >= 24)
+        {
+            Hours = 0;
+            Days++;
+
+        }
+
     }
     private void OnHoursChange(int value)
     {
-        throw new NotImplementedException();
+        if (value == 6)
+        {
+        }
+        if (value == 8)
+        {
+        }
+        if (value == 15)
+        {
+        }
+        if (value == 22)
+        {
+        }
+
     }
 
-    // 2:15
+    
+    private IEnumerable LerpSkyBox(Texture2D a, Texture2D b, float time)
+    {
+        RenderSettings.skybox.SetTexture("_Texture1", a);
+        RenderSettings.skybox.SetTexture("_Texture2", b);
+
+    }
+
+    // WORK AT HOME
 }
