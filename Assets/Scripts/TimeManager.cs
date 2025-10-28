@@ -59,12 +59,12 @@ public class TimeManager : MonoBehaviour
     }
 
     
-    private IEnumerable LerpSkyBox(Texture2D a, Texture2D b, float time)
-    {
-        RenderSettings.skybox.SetTexture("_Texture1", a);
-        RenderSettings.skybox.SetTexture("_Texture2", b);
+    //private IEnumerable LerpSkyBox(Texture2D a, Texture2D b, float time)
+   // {
+      //  RenderSettings.skybox.SetTexture("_Texture1", a);
+      //  RenderSettings.skybox.SetTexture("_Texture2", b);
 
-    }
+   // }
 
     // WORK AT HOME
 }
