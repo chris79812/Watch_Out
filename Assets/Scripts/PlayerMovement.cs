@@ -49,4 +49,3 @@ public class PlayerMovement : MonoBehaviour
 }
 
 
-//video is on 15:20 explaining how it works
