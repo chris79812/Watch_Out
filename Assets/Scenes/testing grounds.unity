@@ -130,9 +130,9 @@ GameObject:
   - component: {fileID: 10633649}
   - component: {fileID: 10633650}
   m_Layer: 0
-  m_Name: CloudMachine
+  m_Name: CloudGenerator
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -145,12 +145,12 @@ Transform:
   m_GameObject: {fileID: 10633648}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -146.64542, y: 183.46817, z: 0}
+  m_LocalPosition: {x: 934.2, y: 85.27431, z: 389.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1657856577}
-  m_Father: {fileID: 501058667}
+  - {fileID: 1174290157}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &10633650
 MonoBehaviour:
@@ -166,11 +166,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clouds:
   - {fileID: 2935231515876182208, guid: d185f28b12b271049a3c7f4556c8e8bf, type: 3}
-  - {fileID: 5541050519878760579, guid: a98323aa91b320446a56f94138a093cc, type: 3}
-  - {fileID: 2885714543430973442, guid: da6df2214a1a1ad498cb9f5de7b91133, type: 3}
-  - {fileID: 7798639429081013520, guid: 9120f7aa8f975a9439a01691d972cc49, type: 3}
-  spawnInterval: 2.5
-  endPoint: {fileID: 1657856576}
+  - {fileID: 6598204060936266360, guid: 5781682ea1114e74cb2f0a54abaae8b8, type: 3}
+  - {fileID: 9109963378534903203, guid: 9967923918f589e4b9b0d5ea91b736f7, type: 3}
+  - {fileID: 8785101243391541745, guid: 38043893d493dd34aad49aa6e30d2507, type: 3}
+  spawnInterval: 1.5
+  endPoint: {fileID: 1174290156}
 --- !u!1 &180690694
 GameObject:
   m_ObjectHideFlags: 0
@@ -626,38 +626,6 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1500, y: 1200}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 1
---- !u!1 &501058666
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 501058667}
-  m_Layer: 0
-  m_Name: Cloud storage
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &501058667
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 501058666}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 494.24542, y: -98.19386, z: 257.30307}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 10633649}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -706,6 +674,37 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1174290156
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1174290157}
+  m_Layer: 0
+  m_Name: EndPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1174290157
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174290156}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -154.1, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 10633649}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1488301412
 GameObject:
@@ -828,37 +827,6 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
---- !u!1 &1657856576
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1657856577}
-  m_Layer: 0
-  m_Name: endPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1657856577
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1657856576}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -54.75, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 10633649}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1674545418
 GameObject:
   m_ObjectHideFlags: 0
@@ -991,4 +959,4 @@ SceneRoots:
   - {fileID: 832575519}
   - {fileID: 1745971543}
   - {fileID: 267847820}
-  - {fileID: 501058667}
+  - {fileID: 10633649}

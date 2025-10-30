@@ -19,9 +19,9 @@ public class CloudScript : MonoBehaviour
     // moves the clouds left and destroys them
     void Update()
     {
-        transform.Translate(Vector3.left * (Time.deltaTime));
+        transform.Translate(Vector3.left * (Time.deltaTime * Speed));
 
-        if (transform.position.x > EndPosX)
+        if (transform.position.x < EndPosX)
         {
             Destroy(gameObject);
         }
