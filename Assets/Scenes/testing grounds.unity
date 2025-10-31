@@ -169,7 +169,7 @@ MonoBehaviour:
   - {fileID: 6598204060936266360, guid: 5781682ea1114e74cb2f0a54abaae8b8, type: 3}
   - {fileID: 9109963378534903203, guid: 9967923918f589e4b9b0d5ea91b736f7, type: 3}
   - {fileID: 8785101243391541745, guid: 38043893d493dd34aad49aa6e30d2507, type: 3}
-  spawnInterval: 1.5
+  spawnInterval: 2.5
   endPoint: {fileID: 1174290156}
 --- !u!1 &180690694
 GameObject:

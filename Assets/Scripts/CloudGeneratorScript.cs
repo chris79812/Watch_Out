@@ -29,13 +29,13 @@ public class CloudGeneratorScript : MonoBehaviour
         int randomIndex = UnityEngine.Random.Range(0, 4);
         GameObject cloud = Instantiate(clouds[randomIndex]);
 
-        float startPosZ = UnityEngine.Random.Range(startPos.y - 20f, startPos.y + 10f);
-        float startPosX = UnityEngine.Random.Range(startPos.y - 2f, startPos.y + 1f);
-        float startY = UnityEngine.Random.Range(startPos.y - 20f, startPos.y + 40f);
+        float startPosZ = UnityEngine.Random.Range(startPos.z - 400f, startPos.z + 400f);
+        float startPosX = UnityEngine.Random.Range(startPos.x - 20f, startPos.x + 40f);
+        float startY = UnityEngine.Random.Range(startPos.y - 10f, startPos.y + 40f);
         cloud.transform.position = new Vector3(startPosX, startY, startPosZ); ;
         
 
-        float scale = UnityEngine.Random.Range(8.8f, 7.2f);
+        float scale = UnityEngine.Random.Range(13.8f, 18.2f);
         cloud.transform.localScale = new Vector3(scale, scale, scale);
 
         float speed = UnityEngine.Random.Range(2.5f, 3.5f);
