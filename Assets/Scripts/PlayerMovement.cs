@@ -1,10 +1,14 @@
+using System;
+using UnityEditor.Rendering.LookDev;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using static UnityEditor.Timeline.TimelinePlaybackControls;
 
 public class PlayerMovement : MonoBehaviour
 {
     public CharacterController controller;
 
-    public float speed = 12f;
+    public float speed = 14f;
     public float gravity = -9.81f * 2;
     public float jumpHeight = 3f;
 
@@ -16,9 +20,18 @@ public class PlayerMovement : MonoBehaviour
 
     bool isGrounded;
 
+
+
+
+
     // Update is called once per frame
     void Update()
     {
+
+
+
+
+
         //checking if we hit the ground to reset our falling velocity, otherwise we will fall faster the next time
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 
@@ -46,6 +59,9 @@ public class PlayerMovement : MonoBehaviour
 
         controller.Move(velocity * Time.deltaTime);
     }
+
 }
+
+   
 
 
