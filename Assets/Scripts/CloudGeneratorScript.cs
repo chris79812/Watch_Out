@@ -35,7 +35,7 @@ public class CloudGeneratorScript : MonoBehaviour
         cloud.transform.position = new Vector3(startPosX, startY, startPosZ); ;
         
 
-        float scale = UnityEngine.Random.Range(13.8f, 18.2f);
+        float scale = UnityEngine.Random.Range(20f, 36f);
         cloud.transform.localScale = new Vector3(scale, scale, scale);
 
         float speed = UnityEngine.Random.Range(2.5f, 3.5f);
