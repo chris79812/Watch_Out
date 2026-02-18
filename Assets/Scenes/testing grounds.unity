@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 0
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 0771ab341795b3b45909693ed050bf65, type: 2}
+  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -481,13 +481,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 410087039}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalRotation: {x: -0.2709414, y: -0.24842852, z: -0.07259852, w: 0.92714804}
   m_LocalPosition: {x: 919, y: 580, z: -136}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: -32.58, y: -30, z: 0}
 --- !u!114 &410087042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -804,18 +804,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7416700195532680745, guid: d808a0935b1746d47af5bf59081fb8ce,
         type: 3}
-      propertyPath: m_Range
-      value: 15.04
-      objectReference: {fileID: 0}
-    - target: {fileID: 7416700195532680745, guid: d808a0935b1746d47af5bf59081fb8ce,
-        type: 3}
       propertyPath: m_Intensity
-      value: 10.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7416700195532680745, guid: d808a0935b1746d47af5bf59081fb8ce,
-        type: 3}
-      propertyPath: m_BounceIntensity
-      value: 0.68
+      value: 208
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -952,6 +942,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7416700195532680745, guid: d808a0935b1746d47af5bf59081fb8ce,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 208.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
